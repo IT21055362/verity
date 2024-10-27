@@ -161,56 +161,100 @@ https://templatemo.com/tm-590-topic-listing
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg">
                                                 <a href="topics-detail.html">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-2">Deepfake Detection</h5>
+                                                            <h5 class="mb-2">Litreature Review</h5>
 
-                                                            <p class="mb-0">Verity scans images in real-time to determine whether they are real or deepfakes. The AI-powered system provides instant feedback directly within your Twitter feed.</p>
+                                                            <p class="mb-0">n recent years, the emergence and rapid advancement of deepfake technology have sparked significant concern across
+                                                                various sectors of society. Deepfake images, a subset of synthetic media, are artificially created or manipulated visual
+                                                                content generated through sophisticated artificial intelligence and machine learning techniques, particularly deep
+                                                                learning and generative adversarial networks (GANs). These technologies have enabled the production of highly
+                                                                realistic fake images that can be nearly indistinguishable from authentic photographs to the human eye.
+                                                                The creation of deepfake images typically involves training AI models on large datasets of real images, allowing the
+                                                                system to learn and replicate patterns, textures, and features with remarkable accuracy. This process can be used to
+                                                                generate entirely new, yet convincingly realistic images of people who don't exist, or to manipulate existing images
+                                                                by swapping faces, altering expressions, or changing various elements within the picture.
+                                                                While deepfake technology has some positive applications in fields such as entertainment, art, and education, its
+                                                                potential for misuse has raised alarming concerns among experts, policymakers, and the general public. The
+                                                                implications of widespread deepfake image creation and distribution are far-reaching and multifaceted.
+                                                                The most pressing concern is the potential for deepfakes to be used as a tool for spreading false information. In an era
+                                                                where visual content plays a crucial role in shaping public opinion, the ability to create convincing fake images of
+                                                                events that never occurred or manipulate existing images to change their context poses a significant threat to informed
+                                                                decision-making and democratic processes.
+                                                                Deepfake technology enables the creation of synthetic images featuring real individuals without their knowledge or
+                                                                consent. This capability has been particularly problematic in the realm of non-consensual pornography, where victims'
+                                                                faces can be superimposed onto explicit content, leading to severe emotional distress, reputational damage, and
+                                                                potential for blackmail.
+                                                                The rise of deepfake images presents complex legal and ethical questions regarding accountability, intellectual
+                                                                property, and the boundaries of free speech. Existing laws and ethical frameworks may be ill-equipped to address the
+                                                                unique challenges posed by this technology.
+                                                                In an article written by Raza et al.[], they present a novel approach to deepfake image detection using deep learning
+                                                                techniques. The authors, introduce a hybrid model called the Deepfake Predictor (DFP), which combines VGG16 and
+                                                                convolutional neural network (CNN) architectures.
+                                                                The study begins by highlighting the growing threat of deepfakes in cybersecurity, emphasizing their potential for
+                                                                misinformation, fraud, and other malicious activities. The authors provide a comprehensive overview of recent
+                                                                developments in deepfake detection, citing several studies that have employed various machine learning and deep
+                                                                learning techniques.
+                                                                The researchers utilize a benchmark dataset containing 1081 real and 960 fake face images to train and test their
+                                                                model. They compare their proposed DFP approach against other transfer learning techniques, including Xception,
+                                                                NAS-Net, Mobile Net, and VGG16.
+                                                                The methodology section details the architecture of the proposed DFP model and explains the hyperparameter tuning
+                                                                process. The authors employ multiple performance metrics, including accuracy, precision, F1 score, specificity, and
+                                                                geometric mean score, to evaluate their model's effectiveness.
+                                                                Results show that the DFP model outperforms other techniques, achieving 94% accuracy and 95% precision on the
+                                                                test set. The authors provide detailed comparisons with other methods through confusion matrices, time-series
+                                                                analyses of training effects, and bar charts of performance metrics.
+                                                                Overall, the article contributes significantly to the field of deepfake detection by proposing a novel, high-performing
+                                                                hybrid model. It addresses a critical issue in digital media authenticity and offers a promising tool for cybersecurity
+                                                                professionals to combat deepfake-related crimes.
+                                                                In a systematic literature review Iftikhar Hussain et al. [] conducted w on existing methods and challenges in
+                                                                deepfake detection. They highlighted key techniques such as CNN-based approaches utilizing pre-trained models like
+                                                                XceptionNet and EfficientNet, recurrent neural networks (RNNs) for detecting temporal inconsistencies in video
+                                                                deepfakes, transfer learning models like EfficientNet and MobileNet, and statistical-based methods that identify
+                                                                artifacts using spectral and spatial inconsistencies.
+                                                                While significant progress has been made in developing deepfake detection techniques, several challenges remain.
+                                                                These include dataset imbalance, adversarial attacks, and the need for real-time detection. To address these challenges,
+                                                                researchers recommend developing hybrid models that combine CNNs with RNNs or statistical methods, creating
+                                                                more comprehensive and diverse datasets, and optimizing models for deployment in digital forensics tools
+                                                                In an article presented by Yogesh Patel et al.[], they propose a novel deep convolutional neural network (D-CNN)
+                                                                architecture for detecting deepfake images. The authors aim to address the growing challenge of identifying synthetic
+                                                                media created by increasingly sophisticated generative adversarial networks (GANs). They categorize deepfake
+                                                                detection approaches into three as Physical feature-based methods, Signal-level feature extraction techniques and
+                                                                Data-driven models using deep neural networks
+                                                                Further they note that while data-driven CNN models have shown promising results, many still struggle with
+                                                                generalizability when faced with different types of deepfakes. To address this, their proposed D-CNN architecture is
+                                                                designed to improve generalizability by training on images from multiple diverse deepfake sources.
+                                                                The proposed model utilizes dense convolutional layers to extract deep features from input images. It incorporates
+                                                                techniques like batch normalization and dropout to enhance training stability and reduce overfitting. The architecture
+                                                                is thoroughly described, including details on the number and types of layers used.
+                                                                Experimental results demonstrate the model's effectiveness, achieving high accuracy (95-99%) across multiple
+                                                                deepfake datasets. The authors conduct additional experiments to evaluate the model's performance on unseen data,
+                                                                further validating its generalizability.
+                                                                Further in an article written by Guarnera L. et al[], provides an overview of deepfake detection methods and presents
+                                                                results from a deepfake detection challenge. They describe deep fake images as AI-generated fake multimedia content,
+                                                                have emerged as a significant concern and research challenge. To support this research, various datasets like DFDC,
+                                                                FaceForensics++, and Celeb-DF have been developed, growing in size and diversity over time.
+                                                                The authors categorize the deepfake detection methods into three categories deep learning-based, physical-based, and
+                                                                physiological-based approaches. Also, they discuss on Deep learning techniques, such as EfficientNet and vision
+                                                                transformers, have shown promising results. Some methods focus on detecting GAN-related artifacts in the frequency
+                                                                domain or DCT coefficients.
+                                                                Further they highlight that while progress has been made, creating robust and generalizable deepfake detectors remains
+                                                                an active area of research. The challenge results demonstrate some of the current capabilities and limitations of state-
+                                                                of-the-art approaches.
+                                                                This literature review explores the landscape of deepfake image technology and detection methods. It highlights the
+                                                                growing concern surrounding deepfakes, which are artificially created or manipulated images generated through
+                                                                advanced AI techniques. The review outlines various approaches to deepfake detection, including deep learning-based
+                                                                methods, hybrid models, and techniques focusing on physical, signal-level, and physiological features.
+                                                                Notable advancements in detection methods are discussed, such as the Deepfake Predictor (DFP) model and other
+                                                                CNN-based approaches. These methods have shown promising results, with some achieving high accuracy rates on
+                                                                specific datasets. However, the review also identifies persistent challenges in the field, including issues of
+                                                                generalizability, dataset imbalance, and the need for real-time detection capabiliti</p>
                                                         </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                    </div>
 
                                                     <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Image Analysis</h5>
-
-                                                                <p class="mb-0">Our advanced AI analyzes images to detect potential deepfakes, offering a percentage-based confidence score so you know exactly how likely an image is fake.</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Authenticity Check</h5>
-
-                                                                <p class="mb-0">Using state-of-the-art machine learning algorithms, Verity gives users clear insights into image authenticity, helping you differentiate between real and manipulated visuals with ease.</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                                    </div>
-
-                                                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png" class="custom-block-image img-fluid" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -219,7 +263,7 @@ https://templatemo.com/tm-590-topic-listing
 
                                 <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="mb-4 mb-lg-0">
                                                 <div class="custom-block bg-white shadow-lg">
                                                     <a href="topics-detail.html">
                                                         <div class="d-flex">
@@ -307,17 +351,103 @@ https://templatemo.com/tm-590-topic-listing
                                   </div>
 
                                 <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab" tabindex="0">   <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg">
                                                 <a href="topics-detail.html">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-2">Investment</h5>
+                                                            <h5 class="mb-2">Litreature Review</h5>
 
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                            <p class="mb-0">Social media platforms such as Twitter and Facebook have revolutionized the way people
+                                                                consume news and information. However, they have also become conduits for the
+                                                                widespread dissemination of misinformation, particularly concerning political issues. This
+                                                                phenomenon presents a serious challenge to democratic societies, as previous research has
+                                                                shown that false and misleading information on social media can significantly influence
+                                                                public discourse and shape public opinion. The global nature of political misinformation
+                                                                on social media is recognized as a major challenge, with profound societal implications,
+                                                                including the potential to incite violence, fuel protests, exacerbate polarization, and erode
+                                                                trust in democratic institutions. Therefore, addressing this issue is crucial for maintaining
+                                                                societal stability and cohesion.
+                                                                
+                                                                detecting political misinformation using NLP techniques: A survey of the state-of-the-art
+                                                                has been studied in a huge body of research. NLP is all about text preprocessing: the area
+                                                                which helps to obtain meaningful features from your raw texts, such as word frequencies
+                                                                sentiment linguistic patterns topic model etc. This is important for us to separate between
+                                                                political fact and falsehood. This process, using Natural Language Processing (NLP) to
+                                                                evaluate linguistic patterns and contextual information in political content has proven
+                                                                effective with new algorithms that are helping make things more accurate than ever before
+                                                                when reportedly detecting misinformation and disinformation.
+                                                                Based on a study by Akanksha Singh and Sanjay Patidar [1] who tested several machine
+                                                                learning techniques such as decision trees, naive Bayes, support vector machines, random
+                                                                forests, convolutional neural networks, and recurrent neural networks, to detect fake news
+                                                                and disinformation on social media. In many experiments, sequential classifiers capable
+                                                                of capturing the recurrent nature of text data, such as long short-term memory and,
+                                                                outperformed non-sequential models. Regarding the linear Support Vector Machines, it
+                                                                has also shown high precision in the classification of the false piece of news. Data
+                                                                preprocessing techniques like imputing missing values with most frequent values can
+                                                                improve the performance of fake news detection models. Traditional methods like Naive
+                                                                Bayes, Support Vector Machines (SVM), and neural networks (e.g. multilayer perceptron)
+                                                                have exhibited significant accuracy for this task. More recently, hybrid deep learning
+                                                                architectures that combine convolutional neural networks (CNN) and recurrent neural
+                                                                networks (RNN) have emerged as a promising approach, achieving over 80% accuracy in
+                                                                detecting fake news on tweets.
+                                                                Majumdar et al [2] presents an approach based on a combination of the long short-term
+                                                                memory recurrent neural network model for multi-class fake news classification, using a
+                                                                dataset that is classified as False, Partial False, True, or Other. The authors explain that
+                                                                while previous work has investigated machine learning and deep learning techniques, such
+                                                                as the CSI method or feature-based classification, none of these have achieved a high
+                                                                training accuracy, at most 0.98, as the LSTM model.
+                                                                
+                                                                Another study by Anand Matheven and Burra Venkata Durga Kumar [3] presents a system
+                                                                for detecting fake news by combining deep learning (Long Short-Term Memory or
+                                                                LSTM) and natural language processing (Word2Vec) models. Several independent
+                                                                variables were analyzed to study their impact on the system's accuracy, including number
+                                                                of training cycles, data diversity, and vector size. The results showed that increasing the
+                                                                number of training epochs beyond an optimal point led to overfitting and stagnation in
+                                                                validation accuracy. Data diversity, in terms of the subject matter and sources of the news
+                                                                articles in the training data, had a significant effect on the system's generalization ability
+                                                                when tested on a separate dataset. Vector size also influenced accuracy, with larger vector
+                                                                sizes negatively impacting performance, especially when training data was limited.
+                                                                Overall, the proposed system achieved high accuracy of over 94% when trained on a
+                                                                diverse dataset and tested on an independent test set, highlighting the efficacy of
+                                                                combining LSTM and Word2Vec for automated fake news detection. However, the
+                                                                system performed poorly (63% accuracy) when trained on a narrowly focused dataset
+                                                                lacking diversity, underscoring the importance of representative and varied training data.
+                                                                A comprehensive review of machine learning models adopted for fake news detection by
+                                                                Gowthami et al [4] reports the performance of the best models in terms of accuracy, F1-
+                                                                score, precision and recall. The traditional algorithms included Random Forest, Naive
+                                                                Bayes, Decision Trees, SVM (Support Vector Machines), and Logistic Regression. Deep
+                                                                learning techniques also provided intelligent insights. They included CNN and LSTM
+                                                                such as, Bi-LSTM, C-LSTM Hierarchical Attention Networks, or their hybrid model
+                                                                CNN-LSTM. Among these, the Bi-LSTM and C-LSTM models achieved the highest
+                                                                accuracy of 95% on a combined corpus for fake news detection. The paper highlights the
+                                                                superiority of deep learning techniques, especially LSTM-based architectures, in
+                                                                capturing the complex patterns and linguistic nuances present in fake news data. However,
+                                                                the performance of models is heavily influenced by the diversity and representativeness
+                                                                of the training data used.
+                                                                
+                                                                Mollah et al [5] presents a cutting-edge approach to fake news detection by synergistically
+                                                                combining the powerful RoBERTa language model with a meticulously crafted deep
+                                                                neural network architecture. Recognizing the limitations of previous methods, the authors
+                                                                leverage RoBERTa's contextual word embeddings to capture the nuanced linguistic
+                                                                patterns indicative of misinformation. These embeddings are then fed into a customized
+                                                                deep neural network designed explicitly for the fake news detection task. The network's
+                                                                architecture incorporates attention mechanisms, dropout layers for regularization, and
+                                                                dense layers for dimensionality reduction, culminating in a binary classification output.
+                                                                Comprehensive experiments on the well-curated WELFake dataset demonstrate the
+                                                                remarkable efficacy of this approach, achieving an exceptional accuracy of 99.76% and
+                                                                outperforming prior state-of-the-art models by a substantial margin. The authors attribute
+                                                                this outstanding performance to the synergy between RoBERTa's language representation
+                                                                capabilities and the tailored deep learning architecture, underscoring the potential of
+                                                                advanced language models and neural networks in combating the pernicious spread of
+                                                                fake news.
+                                                                Recently, Bhutani et al [6] proposed a solution with a sentiment as a feature yielding
+                                                                better accuracy and puts forward experimental data on three types of datasets where the
+                                                                result looks impressive. They also introduces some other work on this topic and mentions
+                                                                approaches like Naive Bayes and Random Forest as well as advantages and disadvantages
+                                                                while utilizing them for the sentiment predict</p>
                                                         </div>
 
-                                                        <span class="badge bg-finance rounded-pill ms-auto">30</span>
                                                     </div>
 
                                                     <img src="images/topics/undraw_Finance_re_gnv2.png" class="custom-block-image img-fluid" alt="">
@@ -325,105 +455,69 @@ https://templatemo.com/tm-590-topic-listing
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="custom-block custom-block-overlay">
-                                                <div class="d-flex flex-column h-100">
-                                                    <img src="images/businesswoman-using-tablet-analysis-graph-company-finance-strategy-statistics-success-concept-planning-future-office-room.jpg" class="custom-block-image img-fluid" alt="">
-
-                                                    <div class="custom-block-overlay-text d-flex">
-                                                        <div>
-                                                            <h5 class="text-white mb-2">Finance</h5>
-
-                                                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis</p>
-
-                                                            <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
-                                                        </div>
-
-                                                        <span class="badge bg-finance rounded-pill ms-auto">25</span>
-                                                    </div>
-
-                                                    <div class="social-share d-flex">
-                                                        <p class="text-white me-4">Share:</p>
-
-                                                        <ul class="social-icon">
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                                            </li>
-
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                                            </li>
-
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-pinterest"></a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
-                                                    </div>
-
-                                                    <div class="section-overlay"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab" tabindex="0">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg">
                                                 <a href="topics-detail.html">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-2">Composing Song</h5>
+                                                            <h5 class="mb-2">Litreature Review</h5>
 
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                            <p class="mb-0">Clickbait, characterized by sensationalist headlines or misleading content intended to attract
+                                                                users' attention and increase engagement, has become a pervasive issue in online forums.
+                                                                Researchers have undertaken various studies to understand the dynamics of clickbait in forums
+                                                                and develop effective detection methods. Chen et al. (2020) conducted a comprehensive survey
+                                                                on clickbait detection in online social media, shedding light on the different techniques
+                                                                employed and introducing a new dataset that encompasses forum data, facilitating further
+                                                                research in this area.
+                                                                They discussed linguistic analysis, machine learning approaches, and user engagement metrics
+                                                                as key components of clickbait detection. Furthermore, Potthast et al. (2018) delved into the
+                                                                linguistic features and user engagement metrics associated with clickbait, primarily focusing
+                                                                on news websites but providing insights applicable to forums. Their research highlighted the
+                                                                importance of understanding the language patterns and engagement behavior indicative of
+                                                                clickbait content.
+                                                                Wang et al. (2019) proposed a novel approach for clickbait detection in social media, which
+                                                                can be extended to forums. They emphasized the significance of contextual analysis by
+                                                                introducing a topic modeling framework that considers the broader context of content shared
+                                                                within online communities. This study provided insights into the contextual nuances of
+                                                                clickbait and its relevance within different discussion topics on forums
+                                                                .
+                                                                Additionally, Gupta et al. (2018) explored machine learning-based techniques for identifying
+                                                                clickbait in online news media. While their primary focus was on news articles, the
+                                                                methodologies and feature selection methods discussed in the study can be applied to clickbait
+                                                                detection in forums. Their research contributed to understanding the application of machine
+                                                                learning algorithms in detecting deceptive content.
+                                                                Furthermore, Al Zamal et al. (2016) conducted a comprehensive investigation into the
+                                                                characteristics of clickbait content across webpages and social media platforms. Their study
+                                                                analyzed linguistic features, engagement metrics, and user behavior patterns associated with
+                                                                clickbait, providing valuable insights into its deceptive tactics and methods of attracting clicks.
+                                                                3
+                                                                Although their research primarily focused on webpages and social media, the findings are
+                                                                highly relevant for detecting clickbait in forums and other online platforms. Semi-supervised
+                                                                learning techniques have recently gained attention for identifying clickbaits in forums. These
+                                                                10 techniques leverage both labelled and unlabelled data to improve detection accuracy,
+                                                                making them particularly useful in scenarios where labelled data is scarce or expensive to
+                                                                acquire. By incorporating semi-supervised learning into clickbait detection algorithms,
+                                                                researchers aim to enhance the adaptability and generalization capabilities of the models,
+                                                                ultimately improving their performance in identifying deceptive content within forums.
+                                                                Continued research in this area holds promise for further advancements in clickbait detection
+                                                                methodologies, ultimately contributing to a more trustworthy and informative online
+                                                                environmen</p>
                                                         </div>
 
-                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
+                                                    
                                                     </div>
 
                                                     <img src="images/topics/undraw_Compose_music_re_wpiw.png" class="custom-block-image img-fluid" alt="">
                                                 </a>
                                             </div>
                                         </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Online Music</h5>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_happy_music_g6wc.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h5 class="mb-2">Podcast</h5>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">20</span>
-                                                    </div>
-
-                                                    <img src="images/topics/undraw_Podcast_audience_re_4i5q.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
 
