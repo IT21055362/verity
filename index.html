@@ -112,6 +112,7 @@ https://templatemo.com/tm-590-topic-listing
                                     <button type="submit" class="form-control">Search</button>
                                 </div>
                             </form>
+                            <div id="searchResults" class="mt-3"></div>
                         </div>
 
                     </div>
@@ -898,64 +899,55 @@ https://templatemo.com/tm-590-topic-listing
         <script src="js/custom.js"></script>
 
        <!-- Add this right before your closing </body> tag -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.querySelector('.custom-form');
-        const searchInput = document.getElementById('keyword');
-        
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.custom-form');
+            const searchInput = document.getElementById('keyword');
+            const resultsDiv = document.getElementById('searchResults');
             
-            // Get the search term
-            const searchTerm = searchInput.value.toLowerCase();
-            
-            // Remove any existing highlights
-            const existingHighlights = document.querySelectorAll('.search-highlight');
-            existingHighlights.forEach(highlight => {
-                const parent = highlight.parentNode;
-                parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
-            });
-            
-            if (searchTerm.trim() === '') return;
-            
-            // Function to highlight text in an element
-            function highlightText(element) {
-                const walker = document.createTreeWalker(
-                    element,
-                    NodeFilter.SHOW_TEXT,
-                    null,
-                    false
-                );
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
                 
-                let node;
+                // Get the search term
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                // Clear previous results
+                resultsDiv.innerHTML = '';
+                
+                if (searchTerm.trim() === '') {
+                    resultsDiv.innerHTML = 'Please enter a search term';
+                    return;
+                }
+                
+                // Get all text elements
+                const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span, div');
                 let matches = 0;
                 
-                while (node = walker.nextNode()) {
-                    const text = node.textContent.toLowerCase();
-                    const index = text.indexOf(searchTerm);
-                    
-                    if (index >= 0) {
-                        const spanNode = document.createElement('span');
-                        spanNode.className = 'search-highlight';
-                        const middleNode = node.splitText(index);
-                        const afterNode = middleNode.splitText(searchTerm.length);
-                        const highlightedText = middleNode.textContent;
-                        spanNode.textContent = highlightedText;
-                        middleNode.parentNode.replaceChild(spanNode, middleNode);
+                elements.forEach(element => {
+                    const text = element.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
                         matches++;
+                        // Highlight the text
+                        const highlightedText = element.textContent.replace(
+                            new RegExp(searchTerm, 'gi'),
+                            match => `<mark>${match}</mark>`
+                        );
+                        element.innerHTML = highlightedText;
                     }
-                }
-                return matches;
-            }
-            
-            // Search the entire document body
-            const matches = highlightText(document.body);
-            
-            // Show results message
-            alert(`Found ${matches} matches for "${searchTerm}"`);
+                });
+                
+                // Show results
+                resultsDiv.innerHTML = `Found ${matches} matches for "${searchTerm}"`;
+            });
         });
-    });
-</script>
+        </script>
+        
+        <style>
+        mark {
+            background-color: yellow;
+            padding: 2px;
+        }
+        </style>
 
         
     </body>
