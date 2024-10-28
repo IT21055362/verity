@@ -596,6 +596,49 @@ strong {
   left: 0;
   padding: 30px;
 }
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 20px;
+}
+
+.icon-circle {
+  width: 100px;  /* Increased from 60px */
+  height: 100px; /* Increased from 60px */
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Added subtle shadow like in the image */
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+
+/* Default size for icons */
+.icon-circle img {
+  width: 60px;  /* Increased from 35px */
+  height: 60px; /* Increased from 35px */
+  object-fit: contain;
+}
+
+/* Specific adjustment for FastAPI icon */
+.icon-circle img[alt="Fast API"] {
+  width: 70px;  /* Slightly larger */
+  height: 70px;
+  padding: 5px;
+}
+
+.tech-item p {
+  margin: 0;
+  font-size: 16px; /* Increased from 14px */
+  color: #666;    /* Slightly lighter gray like in the image */
+}
 
 .social-share {
   position: absolute;
@@ -605,48 +648,7 @@ strong {
   z-index: 2;
   padding: 20px 35px;
 }
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
 
-.icon-circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s;
-  padding: 12px; /* Added padding to ensure consistent spacing */
-}
-
-.icon-circle:hover {
-  transform: scale(1.1);
-}
-
-/* Specific adjustment for FastAPI icon */
-.icon-circle img[alt="Fast API"] {
-  width: 45px;  /* Slightly larger to maintain visibility */
-  height: 45px;
-  padding: 2px; /* Smaller padding for this specific icon */
-}
-
-/* Default size for other icons */
-.icon-circle img {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-}
-
-.tech-item p {
-  margin: 0;
-  font-size: 14px;
-  color: #333;
-}
 
 .social-share .bi-bookmark {
   color: var(--white-color);
