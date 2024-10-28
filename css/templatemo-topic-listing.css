@@ -633,8 +633,8 @@ strong {
 
 /* Specific adjustment for FastAPI icon */
 .icon-circle img[alt="Fast API"] {
-  width: 70px;  /* Slightly larger */
-  height: 70px;
+  width: 100px;  /* Slightly larger */
+  height: 100px;
   padding: 5px;
 }
 
