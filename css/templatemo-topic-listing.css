@@ -596,6 +596,10 @@ strong {
   left: 0;
   padding: 30px;
 }
+.search-highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
 .tech-item {
   display: flex;
   flex-direction: column;
