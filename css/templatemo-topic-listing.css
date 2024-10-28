@@ -616,17 +616,26 @@ strong {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgb(6, 74, 78);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.2s;
+  padding: 12px; /* Added padding to ensure consistent spacing */
 }
 
 .icon-circle:hover {
   transform: scale(1.1);
 }
 
+/* Specific adjustment for FastAPI icon */
+.icon-circle img[alt="Fast API"] {
+  width: 45px;  /* Slightly larger to maintain visibility */
+  height: 45px;
+  padding: 2px; /* Smaller padding for this specific icon */
+}
+
+/* Default size for other icons */
 .icon-circle img {
   width: 35px;
   height: 35px;
