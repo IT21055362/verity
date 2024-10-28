@@ -605,8 +605,8 @@ strong {
 }
 
 .icon-circle {
-  width: 100px;  /* Increased from 60px */
-  height: 100px; /* Increased from 60px */
+  width: 200px;  /* Increased from 60px */
+  height: 200px; /* Increased from 60px */
   border-radius: 50%;
   background-color: white;
   display: flex;
@@ -622,15 +622,15 @@ strong {
 
 /* Default size for icons */
 .icon-circle img {
-  width: 60px;  /* Increased from 35px */
-  height: 60px; /* Increased from 35px */
+  width: 120px;  /* Increased from 35px */
+  height: 120px; /* Increased from 35px */
   object-fit: contain;
 }
 
 /* Specific adjustment for FastAPI icon */
 .icon-circle img[alt="Fast API"] {
-  width: 70px;  /* Slightly larger */
-  height: 70px;
+  width: 170px;  /* Slightly larger */
+  height: 170px;
   padding: 5px;
 }
 
